@@ -1,0 +1,35 @@
+{% set pageList = {
+  '/investment/pages/about.html': 'О компании',
+  '/investment/pages/services.html': 'Услуги',
+  '/investment/pages/blog.html': 'Блог',
+  '/investment/pages/seekers.html': 'Соискателям',
+  '/investment/pages/contacts.html': 'Контакты'
+} %}
+
+<div class="header-contain">
+  {% if MAIN %}
+  <header class="header header_main">
+  {% else %}
+  <header class="header">
+  {% endif %}
+    <div class="app__limiter header__limiter">
+      <a href="/investment/pages/main.html" class="header__logo"></a>
+      <nav class="header__nav-inner">
+        <div class="header__nav-links">
+          {% for page, label in pageList %}
+            <a class="header__nav-link" href="{{ page }}">{{ label }}</a>
+          {% endfor %}
+        </div>
+      </nav>
+      <div class="header__telandquest">
+        <a href="83832637713" class="header__tel">
+        +7 (383) 263 77 13</a>
+        <button class="button header__button" data-popup-id="quest">Задать вопрос</button>
+      </div>
+      <div class="header__nav-burger">
+          <input class="checkbox" id="click" name="exit" type="checkbox" />
+          <label for="click"><span class="burger"></span><span class="menu">Menu</span></label>
+      </div>
+    </div>
+  </header>
+</div>

@@ -1,0 +1,65 @@
+{% set MAIN = true %}
+
+{% extends 'includes/layouts/main.njk' %}
+
+{% block title %}О нас{% endblock %}
+
+{% block content %}
+  {% include 'includes/blocks/header.njk' %}
+
+  <div class="app__content about">
+    <div class="about__banner">
+      <div class="app__limiter">
+        <h1 class="heading about-heading">О компании</h1>
+        <h2 class="about-subheading">Основная деятельность — персональные решения Ваших инвестиционных задач.</h2>
+      </div>
+    </div>
+    <div class="app__limiter">
+      <div class="about__preview">
+        <div class="about__preview-item">
+          <p class="user-input">Наша компания занимается инвестиционным консультированием физических и юридических лиц.
+            Составлением индивидуальных инвестиционных портфелей с учетом инвестиционного профиля и заданными
+            целями клиента.</p>
+        </div>
+        <div class="about__preview-item">
+          <p class="user-input">В зависимости от срока инвестирования, уровня защиты капитала, ожидаемого уровня
+            доходности, степени участия в процессе управления активами и ряда прочих параметров, мы подготовим
+            оптимальное решение для достижения максимальной эффективности Ваших инвестиций.</p>
+        </div>
+      </div>
+    </div>
+    {% include 'includes/blocks/principles.njk' %}
+    <div class="app__limiter">
+      <div class="about__instruments">
+        <h3 class="about__instruments-heading">Для достижения поставленных целей мы используем самые актуальные
+        и надежные инструменты ведущих инвестиционных домов.</h3>
+        <p class="user-input">Особенностью нашего подхода является принцип индивидуальности решений для
+          каждого клиента. Мы учитываем как экономические, так и психологические факторы для выбора наиболее эффективной
+          и комфортной формы инвестирования.</p>
+      </div>
+      <div class="about__category">
+        <h3 class="about__category-heading">Работаем с разными категориями клиентов</h3>
+        <ul class="about__category-list">
+          <li class="about__category-item">Частными инвесторами</li>
+          <li class="about__category-item">Институциональными участниками</li>
+          <li class="about__category-item">Доверительными управляющими</li>
+          <li class="about__category-item">Корпоративными клиентами</li>
+          <li class="about__category-item">Хедж-фондами</li>
+          <li class="about__category-item">Международными инвесторами</li>
+        </ul>
+      </div>
+      {% include 'includes/blocks/team.njk' %}
+    </div>
+    <div class="services__consult">
+      <div class="app__limiter services__consult-limiter">
+        <h3 class="heading services__consult-heading">Консультация специалиста</h3>
+        <div class="services__consult-content">
+          Если у вас есть вопросы по сотрудничеству, отправте заявку и получите бесплатную консультацию нашего специалиста.
+        </div>
+        <button data-popup-id="consult" class="button services__consult-button">Получить консультацию</button>
+      </div>
+    </div>
+  </div>
+  {% include 'includes/blocks/subscription.njk' %}
+  {% include 'includes/blocks/footer.njk' %}
+{% endblock %}

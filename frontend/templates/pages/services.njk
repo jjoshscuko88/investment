@@ -1,0 +1,120 @@
+{% set MAIN = true %}
+
+{% extends 'includes/layouts/main.njk' %}
+
+{% block title %}Услуги{% endblock %}
+
+{% block content %}
+  {% include 'includes/blocks/header.njk' %}
+
+  <div class="app__content services">
+    <div class="services__banner">
+      <h1 class="heading services-heading">Услуги</h1>
+    </div>
+    <div class="app__limiter services__limiter">
+      <p class="services__user-input user-input">
+        В зависимости от срока инвестирования, уровня защиты капитала, ожидаемого уровня доходности,
+        степени участия в процессе управления активами и ряда прочих параметров, мы подготовим оптимальное решение
+        для достижения максимальной эффективности Ваших инвестиций.
+      </p>
+      <div class="services__blocks">
+        <a href="#" class="services__blocks-item">
+          <div class="services__blocks-img">
+            <img src="../assets/servicesimg1.jpg" alt="img">
+          </div>
+          <div class="services__blocks-content">
+            <div class="services__blocks-num">
+              01
+            </div>
+            <h3 class="user-input">Консультирование частных инвесторов</h3>
+            <p class="user-input">
+              Краткое описание данной услуги, пару строк текста о самом главном.
+            </p>
+            <div class="services__blocks-more">
+              Подробнее
+            </div>
+          </div>
+        </a>
+        <a href="#" class="services__blocks-item">
+          <div class="services__blocks-content">
+            <div class="services__blocks-num">
+              02
+            </div>
+            <h3 class="user-input">Составление и ведение портфелей</h3>
+            <p class="user-input">
+              Краткое описание данной услуги, пару строк текста о самом главном.
+            </p>
+            <div href="#" class="services__blocks-more">
+              Подробнее
+            </div>
+          </div>
+          <div class="services__blocks-img">
+            <img src="../assets/servicesimg2.jpg" alt="img">
+          </div>
+        </a>
+        <a href="#" class="services__blocks-item">
+          <div class="services__blocks-img">
+            <img src="../assets/servicesimg3.jpg" alt="img">
+          </div>
+          <div class="services__blocks-content">
+            <div class="services__blocks-num">
+              03
+            </div>
+            <h3 class="user-input">Секьюриация активов</h3>
+            <p class="user-input">
+              Краткое описание данной услуги, пару строк текста о самом главном.
+            </p>
+            <div href="#" class="services__blocks-more">
+              Подробнее
+            </div>
+          </div>
+        </a>
+        <a href="#" class="services__blocks-item">
+          <div class="services__blocks-content">
+            <div class="services__blocks-num">
+              04
+            </div>
+            <h3 class="user-input">Помощь по вопросам международних счетов</h3>
+            <p class="user-input">
+              Краткое описание данной услуги, пару строк текста о самом главном.
+            </p>
+            <div href="#" class="services__blocks-more">
+              Подробнее
+            </div>
+          </div>
+          <div class="services__blocks-img">
+            <img src="../assets/servicesimg4.jpg" alt="img">
+          </div>
+        </a>
+        <a href="#" class="services__blocks-item">
+          <div class="services__blocks-img">
+            <img src="../assets/servicesimg5.jpg" alt="img">
+          </div>
+          <div class="services__blocks-content">
+            <div class="services__blocks-num">
+              05
+            </div>
+            <h3 class="user-input">Помощь в решении задач по ВНЖ, ПМЖ, гражданства</h3>
+            <p class="user-input">
+              Краткое описание данной услуги, пару строк текста.
+            </p>
+            <div href="#" class="services__blocks-more">
+              Подробнее
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="services__consult">
+      <div class="app__limiter services__consult-limiter">
+        <h3 class="heading services__consult-heading">Консультация специалиста</h3>
+        <div class="services__consult-content">
+          Если у вас есть вопросы по сотрудничеству, отправте заявку и получите бесплатную консультацию нашего специалиста.
+        </div>
+        <button data-popup-id="consult" class="button services__consult-button">Получить консультацию</button>
+      </div>
+    </div>
+  </div>
+  {% include 'includes/blocks/subscription.njk' %}
+  {% include 'includes/blocks/footer.njk' %}
+{% endblock %}

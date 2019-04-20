@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+  box-shadow: 0 0 3px rgba(#000, .5);
+}
+
+body {
+  min-width: 320px;
+  background-color: #000412;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  margin: 0 0 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: transform 330ms;
+}
+
+a:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+input,
+button,
+select,
+textarea {
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  transition: background .7s;
+}
+
+input[type=search] {
+  &::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  &::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+

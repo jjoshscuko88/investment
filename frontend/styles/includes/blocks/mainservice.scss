@@ -1,0 +1,139 @@
+.mainservice {
+  padding-bottom: 80px;
+
+  &__head {
+    padding: 80px 0 175px;
+    background: darkblue url(imgs/mainservices.png) no-repeat right;
+    background-size: cover;
+  }
+
+  &-heading {
+    text-align: center;
+    color: #ffffff;
+    font-size: 44px;
+    line-height: 48px;
+  }
+
+  &__slider {
+    max-width: 1260px;
+    margin: -125px auto 20px;
+  }
+
+  .slick-slide {
+    height: auto;
+    text-align: center;
+    padding: 30px 25px;
+    box-shadow: 0 12px 48px rgba(48, 48, 48, 0.08);
+    background-color: #ffffff;
+    margin-right: 30px;
+    height: auto;
+    transition: transform 330ms;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  .multiple-items .slick-track {
+    display: flex;
+  }
+
+  &__slide {
+    &:hover {
+      transform: scale(1);
+    }
+
+    &-num {
+      color: #3688c3;
+      font-family: 'Montserrat';
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 42px;
+      margin-bottom: 25px;
+    }
+
+    &-more {
+      color: #3688c3;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+  }
+
+  p.user-input {
+    margin-bottom: 16px;
+  }
+
+  .slick-list {
+    padding: 25px 0 25px 25px;
+  }
+
+  .slick-dots {
+    bottom: -15px;
+  }
+
+  .slick-dots li  {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  
+  .slick-dots li button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .slick-dots li button:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #656565;
+    border-radius: 50%;
+  }
+}
+
+@media#{$media950} {
+  .mainservice {
+
+    .slick-slide {
+      padding: 15px;
+    }
+  }
+}
+
+@media#{$media850} {
+  .mainservice {
+    padding-bottom: 40px;
+
+    &__head {
+      padding: 40px 0 100px;
+    }
+
+    &__slider {
+      margin: -65px 0 20px;
+    }
+
+    &__slide {
+      &-num {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media#{$media650} {
+  .mainservice {
+    padding-bottom: 20px;
+
+    &-heading {
+      font-size: 36px;
+    }
+
+    .slick-dots {
+      bottom: -0;
+    }
+
+  }
+}

@@ -1,0 +1,105 @@
+.button {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 48px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  border-radius: 4px;
+  background: #e12e1d;
+  transition: transform 330ms;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+input,
+textarea {
+  min-width: 280px;
+  max-width: 280px;
+  color: #303030;
+  font-size: 15px;
+  padding: 0 20px;
+  border-radius: 4px;
+  background: #ffffff;
+  line-height: 48px;
+
+  &::placeholder {
+    opacity: 0.48;
+  }
+}
+
+.heading {
+  color: #16336b;
+  font-family: 'Montserrat';
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 60px;
+}
+
+p.user-input {
+  color: #303030;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+p.buser-input {
+  color: #303030;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+h3.user-input {
+  color: #16336b;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+
+  &_white {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+}
+
+@media #{$media850} {
+  p.user-input {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  p.buser-input {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .heading {
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+
+@media #{$media650} {
+  .heading {
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  p.buser-input {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .button {
+    line-height: 40px;
+  }
+
+  h3.user-input {
+    font-size: 16px;
+    line-height: 1.1;
+    margin-bottom: 5px;
+  }
+}

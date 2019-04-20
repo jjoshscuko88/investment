@@ -1,0 +1,55 @@
+{% extends 'includes/layouts/main.njk' %}
+
+{% block title %}Соискателям{% endblock %}
+
+{% block content %}
+  {% include 'includes/blocks/header.njk' %}
+
+  <div class="app__content seekers">
+    <div class="app__limiter">
+      <div class="seekers__content">
+        <div class="seekers__content-date">
+          16 дек 2018
+        </div>
+        <h2 class="heading seekers-heading">10,5% в USD по стратегии инвестирования в американский IT сектор</h2>
+        <p class="user-input seekers-text">Представляем Вашему вниманию ноту.Нота-структурный продукт, представляющий собой
+        совокупность различных финансовых активов и инструментов, бинированных определенным образом для достижения
+        конечного результата в заранее обозначенный срок. Нота построена по классическим параметрам
+        на корзину из американских бумаг сектора высоких технологий.</p>
+        <div class="seekers__content-banner">
+          <img src="../assets/seekersbanner.jpg" alt="img">
+        </div>
+        <p class="user-input seekers-text">{{ helper.getLorem(55) }}</p>
+        <p class="user-input seekers-text">{{ helper.getLorem(35) }}</p>
+        <p class="user-input seekers-text">{{ helper.getLorem(25) }}</p>
+        <p class="user-input seekers-text">{{ helper.getLorem(65) }}</p>
+        <div class="seekers__content-info">
+          Для получения подробной информации и приобретения ноты, обратитесь к нам по телефону +7 (383) 263 77 13 или
+          посетитенаш офис по адресу Красноярская, 35, БЦ «Гринвич».
+        </div>
+      </div>
+    </div>
+    <div class="seekers__more">
+      <div class="app__limiter">
+        <h2 class="heading seekers__more-heading">Читайте также</h2>
+        <div class="seekers__more-blocks">
+          {% for i in range(1, 5) -%}
+              <a href="#" class="seekers__more-item">
+                <div class="seekers__more-img">
+                  <img src="../assets/blogimg{{ i }}.jpg" alt="img">
+                </div>
+                <div class="seekers__more-date">
+                  21 ноя 2018
+                </div>
+                <div class="seekers__more-prew">
+                  11% в RUB по стратегии инвестирования в разные сектора экономики
+                </div>
+              </a>
+            {%- endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include 'includes/blocks/subscription.njk' %}
+  {% include 'includes/blocks/footer.njk' %}
+{% endblock %}

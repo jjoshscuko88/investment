@@ -1,0 +1,20 @@
+// нормализ установлен с помощью npm.
+@import 'normalize.css/normalize';
+// сгенерированный сет иконок.
+@import 'includes/fontello/css/fontello.css';
+@import 'includes/media.scss';
+@import 'includes/tags';
+@import 'includes/app';
+@import 'includes/classes';
+
+@import 'includes/blocks/header';
+@import 'includes/blocks/footer';
+@import 'includes/blocks/subscription';
+@import 'includes/blocks/popups';
+
+@import 'includes/pages/blog';
+@import 'includes/pages/seekers';
+@import 'includes/pages/contacts';
+@import 'includes/pages/services';
+@import 'includes/pages/main';
+@import 'includes/pages/about'

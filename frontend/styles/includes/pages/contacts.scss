@@ -1,0 +1,192 @@
+.contacts {
+  padding: 75px 0 80px;
+  margin-top: 111px;
+
+  &-heading {
+    width:800px;
+    margin: 0 auto 25px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto 30px;
+
+    &-adress {
+      min-width: 50%;
+      max-width: 50%;
+      color: #303030;
+      font-size: 18px;
+      line-height: 27px;
+      padding-right: 20px;
+    }
+
+    &-contacts {
+      min-width: 50%;
+      max-width: 50%;
+      padding-right: 20px;
+    }
+
+    &-tel,
+    &-email,
+    &-working {
+      display: block;
+      color: #303030;
+      font-size: 18px;
+      line-height: 27px;
+      span {
+        color: #3688C3
+      }
+    }
+  }
+
+  &__map {
+    border: 0;
+    margin-bottom: 25px;
+  }
+
+  &__form {
+    width: 740px;
+    margin: 0 auto;
+
+    &-heading {
+      font-size: 32px;
+      line-height: 35px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    &-inputs {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    &-name,
+    &-tel,
+    &-email {
+      min-width: 240px;
+      max-width: 240px;
+      border: 2px solid #ebebeb;
+      margin-bottom: 8px;
+    }
+
+    &-textarea {
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 88px;
+      max-height: 88px;
+      line-height: 18px;
+      padding: 15px 20px;
+      border: 2px solid #ebebeb;
+    }
+
+    &-submit {
+      text-align: right;
+    }
+  }
+}
+
+@media#{$media950} {
+  .contacts {
+    margin-top: 94px;
+  }
+}
+
+@media#{$media850} {
+  .contacts {
+    padding: 25px 0 30px;
+
+    &-heading {
+      width: 100%;
+    }
+
+    &__content {
+      width: 100%;
+
+      &-adress,
+      &-tel,
+      &-email,
+      &-working {
+        font-size: 16px;
+      }
+    }
+
+    &__form {
+      width: 100%;
+
+      &-name,
+      &-tel,
+      &-email {
+        min-width: 32%;
+        max-width: 32%;
+      }
+    }
+  }
+}
+
+@media#{$media750} {
+  .contacts {
+
+    &__form {
+
+      &-inputs {
+        flex-direction: column;
+      }
+
+      &-name,
+      &-tel,
+      &-email {
+        min-width: 240px;
+        max-width: 240px;
+        line-height: 44px;
+      }
+    }
+  }
+}
+
+@media#{$media650} {
+  .contacts {
+
+    &__map {
+      margin-bottom: 20px;
+    }
+
+    &__content {
+      &-adress,
+      &-tel,
+      &-email,
+      &-working {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media#{$media550} {
+  .contacts {
+    margin-top: 154px;
+
+    &-heading {
+      margin: 0 auto 15px;
+    }
+
+    &__content {
+      flex-direction: column;
+
+      &-adress {
+        margin-bottom: 10px;
+      }
+
+      &-adress,
+      &-contacts {
+        min-width: 100%;
+        max-width: 100%;
+        padding-right: 0;
+      }
+    }
+  }
+}
+

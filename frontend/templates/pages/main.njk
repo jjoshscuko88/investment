@@ -1,0 +1,56 @@
+{% set MAIN = true %}
+
+{% extends 'includes/layouts/main.njk' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+  {% include 'includes/blocks/header.njk' %}
+
+  <div class="app__content main">
+    <div class="main__banner">
+      <div class="app__limiter">
+        <h1 class="heading main-heading">Используем свои знания и возможности в Ваших целях!</h1>
+        <div class="main__banner-content">
+          Используемые нами инвестиционные инструменты позволяют достигать поставленных целей и находить
+          индивидуальные решения для каждого клиента.
+        </div>
+        <button class="button">Подробнее</button>
+      </div>
+    </div>
+    {% include 'includes/blocks/personal.njk' %}
+    {% include 'includes/blocks/mainservice.njk' %}
+    <div class="services__consult">
+      <div class="app__limiter services__consult-limiter">
+        <h3 class="heading services__consult-heading">Консультация специалиста</h3>
+        <div class="services__consult-content">
+          Если у вас есть вопросы по сотрудничеству, отправте заявку и получите бесплатную консультацию нашего специалиста.
+        </div>
+        <button data-popup-id="consult" class="button services__consult-button">Получить консультацию</button>
+      </div>
+    </div>
+    <div class="seekers__more main__blog">
+      <div class="app__limiter">
+        <h2 class="heading">Блог</h2>
+        <div class="seekers__more-blocks">
+          {% for i in range(1, 5) -%}
+              <a href="#" class="seekers__more-item">
+                <div class="seekers__more-img">
+                  <img src="../assets/blogimg{{ i }}.jpg" alt="img">
+                </div>
+                <div class="seekers__more-date">
+                  21 ноя 2018
+                </div>
+                <div class="seekers__more-prew">
+                  11% в RUB по стратегии инвестирования в разные сектора экономики
+                </div>
+              </a>
+            {%- endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include 'includes/blocks/career.njk' %}
+  {% include 'includes/blocks/subscription.njk' %}
+  {% include 'includes/blocks/footer.njk' %}
+{% endblock %}

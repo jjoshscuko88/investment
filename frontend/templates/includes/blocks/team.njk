@@ -1,0 +1,18 @@
+<div class="team">
+  <h2 class="heading team-heading">Наша команда</h2>
+  <div class="team__blocks">
+    {% for i in range(1, 5) -%}
+      <div class="team__blocks-item">
+        <div class="team__blocks-img">
+          <img src="../assets/teamimg{{ i }}.jpg" alt="img">
+        </div>
+        <div class="team__blocks-name">
+          Владимир Сваровский
+        </div>
+        <div class="team__blocks-prof">
+          Управляющий партнер
+        </div>
+      </div>
+    {%- endfor %}
+  </div>
+</div>

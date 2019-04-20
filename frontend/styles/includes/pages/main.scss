@@ -1,0 +1,108 @@
+.main {
+  @import 'includes/blocks/career';
+  @import 'includes/blocks/personal';
+  @import 'includes/blocks/mainservice';
+
+  margin-top: 111px;
+
+  &__banner {
+    text-align: center;
+    padding: 205px 0;
+    background: lightgrey url(imgs/mainbanner.jpg) no-repeat center;
+    background-size: cover;
+
+    &-content {
+      width: 800px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 36px;
+      margin: 0 auto 15px;
+    }
+  }
+
+  &-heading {
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__blog {
+    background: #ffffff;
+  }
+}
+
+@media#{$media950} {
+  .main {
+    margin-top: 94px;
+
+    &-heading {
+      font-size: 48px;
+    }
+
+    &__banner {
+      padding: 100px 0;
+
+      &-content {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media#{$media850} {
+  .main {
+
+    &-heading {
+      font-size: 42px;
+      line-height: 1.1;
+    }
+
+    &__banner {
+      padding: 80px 0;
+      &-content {
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.2;
+      }
+    }
+
+  }
+}
+
+@media#{$media650} {
+  .main {
+
+    &-heading {
+      font-size: 32px;
+    }
+
+    &__banner {
+      padding: 30px 0;
+      &-content {
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media#{$media550} {
+  .main {
+    margin-top: 154px;
+
+    &-heading {
+      font-size: 28px;
+    }
+
+    &__banner {
+      padding: 30px 0;
+
+      &-content {
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+  }
+}
+

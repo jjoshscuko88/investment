@@ -1,0 +1,210 @@
+.about {
+  @import 'includes/blocks/principles';
+  @import 'includes/blocks/team';
+
+  margin-top: 111px;
+
+  &__banner {
+    text-align: center;
+    padding: 118px 0;
+    background: lightgray url(imgs/aboutbanner.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  &-heading {
+    color: #ffffff;
+  }
+
+  &-subheading {
+    width: 600px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    margin: 0 auto;
+  }
+
+  &__preview {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    padding: 80px 0;
+    margin: 0 auto;
+
+    &-item {
+      min-width: 48%;
+      max-width: 48%;
+    }
+  }
+
+  &__instruments {
+    width: 810px;
+    text-align: center;
+    margin: 0 auto 80px;
+
+    &-heading {
+      color: #303030;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 36px;
+    }
+  }
+
+  &__category {
+    padding: 80px 110px 60px;
+    background: #3688c3;
+
+    &-heading {
+      text-align: center;
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 20px;
+      margin-bottom: 25px;
+    }
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      min-width: 30%;
+      max-width: 30%;
+      color: #ffffff;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      padding-right: 20px;
+      margin-bottom: 15px;
+      list-style: disc;
+    }
+  }
+}
+
+@media#{$media950} {
+  .about {
+    margin-top: 94px;
+
+    &__category {
+      padding: 80px 50px 60px;
+    }
+  }
+}
+
+@media#{$media850} {
+  .about {
+
+    &-subheading {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    &__preview {
+      width: 100%;
+      padding: 40px 0;
+    }
+
+    &__instruments {
+      width: 100%;
+      margin: 0 auto 40px;
+
+      &-heading {
+        font-size: 18px;
+        line-height: 1.2;
+      }
+    }
+
+    &__category {
+      padding: 40px 30px 20px;
+
+      &-item {
+        font-size: 14px;
+      }
+    }
+
+  }
+}
+
+
+@media#{$media650} {
+  .about {
+    
+    &__banner {
+      padding: 40px 0;
+    }
+
+    &-subheading {
+      width: 100%;
+    }
+
+    &__preview {
+      flex-direction: column;
+      padding: 20px 0;
+
+      &-item {
+        min-width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__category {
+      padding: 20px 30px 0;
+
+      &-list {
+        flex-wrap: wrap; 
+      }
+
+      &-item {
+        min-width: 50%;
+        max-width: 50%;
+      }
+    }
+
+  }
+}
+
+@media#{$media550} {
+  .about {
+    margin-top: 154px;
+
+    &-heading {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    &__banner {
+      padding: 20px 0;
+    }
+
+    &__instruments {
+      margin: 0 auto 20px;
+
+      &-heading {
+        font-size: 16px;
+      }
+    }
+
+    &__category {
+
+      &-heading {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      &-item {
+        min-width: 100%;
+        min-width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
